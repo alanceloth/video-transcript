@@ -1,0 +1,8 @@
+# ASR local em GPU (CTranslate2)
+faster-whisper==1.2.1
+# diarizacao offline por audio (fallback para video que nao seja do Teams)
+sherpa-onnx==1.13.4
+numpy==2.5.1
+# DLLs de CUDA que o CTranslate2 exige no Windows (cuBLAS 12 + cuDNN 9)
+nvidia-cublas-cu12==12.9.2.10
+nvidia-cudnn-cu12==9.25.0.15

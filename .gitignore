@@ -1,0 +1,20 @@
+# modelos ONNX da diarizacao (~145 MB) — baixe com: make models
+models/
+
+# ambiente virtual — recrie com: make setup
+.venv/
+
+# videos de entrada e tudo que o pipeline gera (dados de reuniao, nunca versionar)
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+# layout antigo (antes de output/)
+out-*/
+
+# mapa user id -> nome do workspace do Slack (dado interno); modelo em slack_users.example.json
+slack_users.json
+
+__pycache__/
+*.pyc
+*.part
